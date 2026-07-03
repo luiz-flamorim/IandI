@@ -69,6 +69,13 @@ a {
   text-decoration: none;
 }
 
+.box_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .slogan {
   font-size: 2rem;
   margin-top: 1em;
@@ -308,7 +315,12 @@ footer {
   .content-wrapper {
     max-width: 80%;
   }
-
+  .box_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   h2 {
     font-size: 1.75rem;
     text-align: center;
