@@ -44,8 +44,8 @@ body {
 }
 
 .logo {
-  max-width: 50%;
-  /* margin-top: 1rem; */
+  max-width: 40%;
+  margin-top: 5rem;
 }
 
 .box1 {
@@ -54,7 +54,7 @@ body {
   border-radius: 5px;
   padding: 0.5em 1em;
   width: fit-content;
-  margin-top: 3rem;
+  margin: 3rem 0rem 3rem 0rem;
   color: var(--white);
   background-color: var(--teal);
 }
@@ -74,7 +74,7 @@ a {
   margin-top: 1em;
   line-height: 1.3em;
   font-weight: 200;
-  width: 50%;
+  width: 40%;
 }
 
 /* ====== SERVICES ===== */
@@ -278,12 +278,15 @@ footer {
 @media screen and (max-width: 768px) {
   .logo {
     max-width: 100%;
+    margin-top: 2rem;
   }
   .slogan {
     font-size: 1.5rem;
     font-weight: 200;
     width: 100%;
+    text-align: center;
   }
+
   .open::before {
     content: "";
     position: absolute;
@@ -291,7 +294,7 @@ footer {
     background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 0.1)
+      rgba(255, 255, 255, 0.5)
     );
     pointer-events: none;
     /* url("../images/header-bg.png"); */
@@ -308,6 +311,7 @@ footer {
 
   h2 {
     font-size: 1.75rem;
+    text-align: center;
   }
 
   p {
@@ -393,11 +397,19 @@ footer {
   .stats {
     /* border: blueviolet solid 1px; */
     width: 100%;
+
+    p {
+      font-size: 1.25rem;
+    }
+  }
+
+  .figure {
+    font-size: 2.5rem;
   }
 
   .icon_stat {
     padding: 0rem 1rem 0rem 0rem;
-    max-height: 3rem;
+    max-height: 2rem;
     width: 4rem;
     /* border: royalblue solid 1px; */
   }
@@ -405,5 +417,12 @@ footer {
   .cases-img {
     width: 100%;
     order: 3;
+  }
+}
+footer {
+  padding: 3rem;
+
+  h1 {
+    font-size: 1.5rem;
   }
 }
