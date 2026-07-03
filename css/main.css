@@ -146,9 +146,6 @@ article {
   padding: 4em 0 4em 0;
   display: flex;
   gap: 1.5rem;
-  /* & > * {
-    flex-basis: calc(50% - var(--base-space));
-  } */
 }
 
 .cases1st {
@@ -173,7 +170,7 @@ article {
 
 .stats {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   padding: 2rem 0rem 0rem 0rem;
 
   p {
@@ -186,7 +183,7 @@ article {
 
 .icon_stat {
   padding: 0rem 1rem 0rem 0rem;
-  max-height: 3rem;
+  max-height: 2.25rem;
 }
 
 .figure {
@@ -305,6 +302,10 @@ footer {
     z-index: 1;
   }
 
+  .content-wrapper {
+    max-width: 80%;
+  }
+
   h2 {
     font-size: 1.75rem;
     /* padding: 0rem 0rem 1rem 0rem; */
@@ -368,11 +369,11 @@ footer {
   }
 
   blockquote {
-    font-size: 1rem;
+    font-size: 1.15rem;
   }
 
   cite {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
 
   .cases1st {
