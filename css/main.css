@@ -259,11 +259,36 @@ p {
   font-size: 1.5rem;
 }
 
-.site-footer img {
-  padding: 1em;
+.social-icon {
   display: inline-block;
-  max-height: 70px;
-  fill: var(--darkgray);
+  margin: 1em;
+  background-color: var(--darkgray);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  mask-mode: alpha;
+  transition: background-color 0.5s ease;
+}
+
+.social-icon:hover {
+  background-color: var(--lightgray);
+}
+
+.social-icon--mail {
+  width: 44px;
+  height: 29px;
+  -webkit-mask-image: url("../images/mail.svg");
+  mask-image: url("../images/mail.svg");
+}
+
+.social-icon--linkedin {
+  width: 36px;
+  height: 35px;
+  -webkit-mask-image: url("../images/linkedin.svg");
+  mask-image: url("../images/linkedin.svg");
 }
 
 /* ====== MOBILE ===== */
