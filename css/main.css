@@ -55,18 +55,17 @@ body {
   padding: 0.5em 1em;
   width: fit-content;
   margin: 3rem 0rem 3rem 0rem;
-  color: var(--white);
   background-color: var(--teal);
 }
 
-.cta-button :hover {
-  color: var(--darkgray);
-  transition: color 0.5s ease;
-}
-
-a {
+.cta-button a {
   color: var(--white);
   text-decoration: none;
+}
+
+.cta-button a:hover {
+  color: var(--darkgray);
+  transition: color 0.5s ease;
 }
 
 .cta-wrapper {
@@ -98,7 +97,7 @@ a {
   }
 }
 
-article {
+.service-item {
   flex: 0 1 25%;
 }
 
@@ -194,7 +193,11 @@ article {
   background-color: var(--violet2);
 }
 
-blockquote {
+.single-quote {
+  padding-bottom: 3em;
+}
+
+.single-quote blockquote {
   font-weight: 200;
   font-size: 1.75rem;
   margin-left: auto;
@@ -203,15 +206,11 @@ blockquote {
   padding-bottom: 1em;
 }
 
-cite {
+.single-quote cite {
   color: var(--violet1);
   font-size: 1.25rem;
   font-weight: 500;
   font-style: normal;
-}
-
-.single-quote {
-  padding-bottom: 3em;
 }
 
 /* ====== FONTS ===== */
@@ -246,7 +245,7 @@ p {
   font-family: Space grotesk;
 }
 /* ====== FOOTER ===== */
-footer {
+.site-footer {
   text-align: center;
   padding: 3rem;
 
@@ -356,11 +355,11 @@ footer {
     max-height: 6rem;
   }
 
-  blockquote {
+  .single-quote blockquote {
     font-size: 1.15rem;
   }
 
-  cite {
+  .single-quote cite {
     font-size: 0.85rem;
   }
 
